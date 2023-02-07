@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu-item {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-menu-item.actived {
+    color: #bf7bff;
+    border-radius: 9999px;
+    border-width: 1px;
+    border-color: #bf7bff;
+}
+
+.header-menu-item:hover {
+    color: #bf7bff;
+    border-radius: 9999px;
+    border-width: 1px;
+    border-color: #bf7bff;
+}
+
+.left-popup-menu {
+    display: flex;
+    position: fixed;
+    left: 0;
+    flex-direction: row;
+    top: 29%;
+    gap: 15px;
+}
+
+.left-popup-menu-items-panel {
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: rgb(255 255 255 / 0.2);
+    gap: 2rem;
+}
+
+.left-popup-menu-items-panel:hover {
+    background-color: rgb(255 255 255 / 0.4);
+}
+
+.left-popup-menu-item {
+    width: 49px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.left-popup-menu-item:hover {
+    --tw-scale-x: 1.1;
+    --tw-scale-y: 1.1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.left-popup-menu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-character {
+    position: absolute;
+    top: 0px;
+    left: 11%;
+    width: 45%;
+}
+
+.right-character {
+    position: absolute;
+    top: 175px;
+    right: 0px;
+    width: 45%;
+}
+
+.main-button {
+    position: relative;
+}
+
+.main-button .hover-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.main-button:hover .hover-image {
+    display: inline;
+}
+
+.main-button:active .hover-image {
+    display: none;
+}
+
+.gameplay-items-panel {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5%;
+}
+
+.gameplay-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 1rem;
+    border-width: 1px;
+    border-color: #ed6d04;
+    color: white;
+    --tw-backdrop-brightness: brightness(.5);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    background-color: rgb(255 255 255 / 0.05);
+}
+
+.gameplay-item .title {
+    font-size: 24px;
+}
+
+.gameplay-item .description {
+    text-align: center;
+    font-size: 18px;
+}

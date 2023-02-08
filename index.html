@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="relative flex flex-col bg-scroll bg-no-repeat bg-top bg-[length:2000px_7089px] bg-cover"
+    <div class="relative flex flex-col bg-scroll bg-top bg-no-repeat bg-cover"
         style="background-image: url(assets/images/background.jpg);">
         <!-- Header -->
         <div class="fixed top-0 left-0 z-10 flex flex-col w-full">
@@ -28,21 +28,21 @@
                     <img class="w-auto" src="assets/images/logo.png" alt="">
                 </div>
                 <div class="header-menu grow">
-                    <div class="header-menu-item actived">
+                    <a href="#start" class="header-menu-item actived">
                         <p>START PLAYING</p>
-                    </div>
-                    <div class="header-menu-item">
+                    </a>
+                    <a href="#game" class="header-menu-item">
                         <p>GAMEPLAY</p>
-                    </div>
-                    <div class="header-menu-item">
+                    </a>
+                    <a href="#token" class="header-menu-item">
                         <p>TOKEN ALLOCATION</p>
-                    </div>
-                    <div class="header-menu-item">
+                    </a>
+                    <a href="#map" class="header-menu-item">
                         <p>ROADMAP</p>
-                    </div>
-                    <div class="header-menu-item">
+                    </a>
+                    <a href="#team" class="header-menu-item">
                         <p>TEAM</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
         <!-- Body -->
         <div class="flex flex-col">
             <!-- Main Buttons -->
-            <div class="flex flex-col gap-5 h-[92vh] justify-center items-center">
+            <div id="start" class="flex flex-col gap-5 h-[92vh] justify-center items-center">
                 <button class="main-button hover:scale-105">
                     <img src="assets/images/buttons/buy_button.png" alt="">
                     <img class="hover-image" src="assets/images/buttons/buy_button_hover.png" alt="">
@@ -94,7 +94,7 @@
                 </button>
             </div>
             <!-- Core Gameplay -->
-            <div class="flex flex-col gap-56 px-[12%]">
+            <div id="game" class="flex flex-col gap-56 px-[12%]">
                 <div class="flex justify-center">
                     <div class="sub-title-section">
                         <img src="assets/images/title_background.png" alt="">
@@ -136,7 +136,7 @@
                 </div>
             </div>
             <!-- Chain Rivals Road Map -->
-            <div class="flex flex-col gap-[100px] px-[12%] mt-[115px]">
+            <div id="map" class="flex flex-col gap-[100px] px-[12%] mt-[115px]">
                 <div class="flex justify-center">
                     <div class="sub-title-section">
                         <img src="assets/images/title_background.png" alt="">
@@ -214,7 +214,7 @@
                 </div>
             </div>
             <!-- Tokenomics section -->
-            <div class="flex flex-col gap-[45px]">
+            <div id="token" class="flex flex-col gap-[45px]">
                 <div class="flex justify-center">
                     <div class="sub-title-section">
                         <img src="assets/images/title_background.png" alt="">
@@ -280,7 +280,7 @@
                 </div>
             </div>
             <!-- Team -->
-            <div class="flex flex-col">
+            <div id="team" class="flex flex-col">
                 <div class="flex justify-center">
                     <div class="sub-title-section">
                         <img src="assets/images/title_background.png" alt="">

@@ -6,23 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chain Rivals</title>
+    <!-- JS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS -->
     <link href="assets/css/app.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="relative flex flex-col h-[3000px] bg-scroll bg-no-repeat bg-top bg-[length:2000px_7089px]"
+    <div class="relative flex flex-col bg-scroll bg-no-repeat bg-top bg-[length:2000px_7089px]"
         style="background-image: url(assets/images/background.jpg);">
         <!-- Scatch -->
-        <div class="absolute top-0 left-0 w-full">
+        <div class="absolute top-0 left-0 hidden w-full">
             <img class="opacity-20" src="assets/images/scatch.jpg" alt="">
         </div>
         <!-- Header -->
-        <div class="flex flex-col fixed w-full top-0 left-0 z-10">
+        <div class="fixed top-0 left-0 z-10 flex flex-col w-full">
             <div class="flex flex-row gap-4 px-[12%] w-full h-[58px] bg-black justify-end items-center">
-                <p class="text-[#b477ff]">LOGIN</p>
-                <p class="text-[#b477ff]">|</p>
-                <p class="text-[#b477ff]">SIGN-UP</p>
+                <a href="#" class="text-[#b477ff] hover:underline">LOGIN</a>
+                <a href="#" class="text-[#b477ff]">|</a>
+                <a href="#" class="text-[#b477ff] hover:underline">SIGN-UP</a>
             </div>
             <div
                 class="flex flex-row gap-[8%] h-[94px] px-[12%] backdrop-blur-md bg-gradient-to-r from-black/80 to-black/30">
@@ -81,25 +83,32 @@
                 <img src="assets/images/right_character.png" alt="">
             </div>
         </div>
+
+        <!-- Body -->
         <div class="flex flex-col">
             <!-- Main Buttons -->
-            <div class="flex flex-col gap-5 h-[90vh] justify-center items-center">
-                <button class="main-button">
+            <div class="flex flex-col gap-5 h-[92vh] justify-center items-center">
+                <button class="main-button hover:scale-105">
                     <img src="assets/images/buttons/buy_button.png" alt="">
                     <img class="hover-image" src="assets/images/buttons/buy_button_hover.png" alt="">
                 </button>
-                <button class="main-button">
+                <button class="main-button hover:scale-105">
                     <img src="assets/images/buttons/join_button.png" alt="">
                     <img class="hover-image" src="assets/images/buttons/join_button_hover.png" alt="">
                 </button>
             </div>
             <!-- Core Gameplay -->
             <div class="flex flex-col gap-56 px-[12%]">
-                <div class="flex justify-center items-start">
-                    <img src="assets/images/gameplay/title.png" alt="">
+                <div class="flex justify-center">
+                    <div class="sub-title-section">
+                        <img src="assets/images/title_background.png" alt="">
+                        <div class="title">
+                            <p>Core gameplay</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="gameplay-items-panel">
-                    <div class="gameplay-item">
+                    <div class="gameplay-item following-button">
                         <img src="assets/images/gameplay/01.png" alt="">
                         <p class="title">Play to Earn</p>
                         <p class="description">
@@ -109,7 +118,7 @@
                             to activate NFT,.
                         </p>
                     </div>
-                    <div class="gameplay-item">
+                    <div class="gameplay-item following-button">
                         <img src="assets/images/gameplay/02.png" alt="">
                         <p class="title">Wager system</p>
                         <p class="description">
@@ -119,7 +128,7 @@
                             to activate NFT, redefining the value of NFT.
                         </p>
                     </div>
-                    <div class="gameplay-item">
+                    <div class="gameplay-item following-button">
                         <img src="assets/images/gameplay/03.png" alt="">
                         <p class="title">NFT utility</p>
                         <p class="description">
@@ -131,16 +140,21 @@
                 </div>
             </div>
             <!-- Chain Rivals Road Map -->
-            <div class="flex flex-col gap-[100px] px-[12%] mt-[100px]">
-                <div class="flex justify-center items-start">
-                    <img src="assets/images/chainrivals/title.png" alt="">
+            <div class="flex flex-col gap-[100px] px-[12%] mt-[115px]">
+                <div class="flex justify-center">
+                    <div class="sub-title-section">
+                        <img src="assets/images/title_background.png" alt="">
+                        <div class="title">
+                            <p>Chain rivals road map</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col">
-                    <div class="flex flex-row gap-[10%]">
-                        <img class="w-[530px]" src="assets/images/chainrivals/01.png" alt="">
-                        <div class="flex flex-col items-center grow">
-                            <div class="py-[55px]">
-                                <img src="assets/images/chainrivals/option01.png" alt="">
+                <div class="flex flex-col gap-[5px]">
+                    <div class="flex flex-row gap-[20%] reveal fade-left">
+                        <img class="w-[530px]" src="assets/images/option/01.png" alt="">
+                        <div class="flex flex-col items-start grow">
+                            <div class="option-title">
+                                <p>Forgin the chains: 2022 Q2</p>
                             </div>
                             <div class="flex flex-col text-white text-[26px]">
                                 <p>- Preliminary character design and asset gathering</p>
@@ -150,14 +164,210 @@
                             </div>
                         </div>
                     </div>
+                    <div class="relative flex flex-row pt-[70px] reveal fade-right">
+                        <div class="absolute top-0 -right-[5%]">
+                            <img class="" src="assets/images/option/separate_right.png" alt="">
+                        </div>
+                        <div class="flex flex-col items-start grow">
+                            <div class="option-title">
+                                <p>Shackling onto the blockchain: 2022 Q3</p>
+                            </div>
+                            <div class="flex flex-col text-white text-[26px]">
+                                <p>- Smart Contract finished and tethered to the Unity game engine</p>
+                                <p>- Contract makes its launch as an ERC-20 token</p>
+                                <p>- Heavy marketing push with the launch (with 30 influencers)</p>
+                                <p>- Groundwork for the first NFT mint laid out</p>
+                            </div>
+                        </div>
+                        <img src="assets/images/option/02.png" alt="">
+                    </div>
+                    <div class="relative flex flex-row pt-[70px] gap-[13%] reveal fade-bottom">
+                        <div class="absolute top-0 -left-[5%]">
+                            <img class="" src="assets/images/option/separate_left.png" alt="">
+                        </div>
+                        <img src="assets/images/option/03.png" alt="">
+                        <div class="flex flex-col items-start grow py-[70px]">
+                            <div class="option-title">
+                                <p>Unchaining the beast: 2022 Q4</p>
+                            </div>
+                            <div class="flex flex-col text-white text-[26px]">
+                                <p>- First lore based in-game event</p>
+                                <p>- Two different marketing agencies hired</p>
+                                <p>- More hands on the development team</p>
+                                <p>- First NFT mint with in-game utility</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative flex flex-row pt-[70px] py-[25px]">
+                        <div class="absolute top-0 -right-[5%]">
+                            <img class="" src="assets/images/option/separate_right.png" alt="">
+                        </div>
+                        <div class="flex flex-col items-start grow reveal fade-left">
+                            <div class="option-title">
+                                <p>Steel against steel:</p>
+                            </div>
+                            <div class="flex flex-col text-white text-[26px]">
+                                <p>- Chain Rivals official E-sports tournament with huge rewards</p>
+                                <p>- Support from well known streamers</p>
+                                <p>- New fighters and subsequent balance patches</p>
+                                <p>- More mainstream marketing</p>
+                            </div>
+                        </div>
+                        <img class="reveal fade-right" src="assets/images/option/04.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Tokenomics section -->
+            <div class="flex flex-col gap-[45px]">
+                <div class="flex justify-center">
+                    <div class="sub-title-section">
+                        <img src="assets/images/title_background.png" alt="">
+                        <div class="title">
+                            <p>Tokenomics section</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bar-section">
+                    <div class="flex justify-end flex-1 h-full">
+                        <img src="assets/images/analysis/balance.png" alt="">
+                    </div>
+                    <div class="flex items-center justify-center h-full">
+                        <img class="h-full" src="assets/images/analysis/separate_bar.png" alt="">
+                    </div>
+                    <div class="flex-1 analysis-items-panel">
+                        <div class="analysis-item">
+                            <div class="img">
+                                <img src="assets/images/icons/drop_icon.png" alt="">
+                            </div>
+                            <div class="part">
+                                <p class="name">75%</p>
+                                <p class="value">uniswap liquidity pool</p>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="img">
+                                <img src="assets/images/icons/brodcast_icon.png" alt="">
+                            </div>
+                            <div class="part">
+                                <p class="name">10%</p>
+                                <p class="value">marketing</p>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="img">
+                                <img src="assets/images/icons/exchange_icon.png" alt="">
+                            </div>
+                            <div class="part">
+                                <p class="name">5%</p>
+                                <p class="value">cex listings</p>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="img">
+                                <img src="assets/images/icons/money_icon.png" alt="">
+                            </div>
+                            <div class="part">
+                                <p class="name">10%</p>
+                                <p class="value">buy and sell tax</p>
+                            </div>
+                        </div>
+                        <div class="analysis-item">
+                            <div class="img">
+                                <img src="assets/images/icons/lock_icon.png" alt="">
+                            </div>
+                            <div class="part">
+                                <p class="name">100%</p>
+                                <p class="value">lp tokens locked</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team -->
+            <div class="flex flex-col">
+                <div class="flex justify-center">
+                    <div class="sub-title-section">
+                        <img src="assets/images/title_background.png" alt="">
+                        <div class="title">
+                            <p>Team</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-7 px-[12%] mt-[130px]">
+                    <div class="duration-200 contact-item hover:scale-105" style="border-color: #5f375f;">
+                        <div class="header" style="background-image: url('assets/images/contact/header01.png');border-color: #5f375f;">
+                            <p>Developer</p>
+                            <img class="bottom-0 right-0 icon" src="assets/images/contact/character01.png" alt="">
+                        </div>
+                        <div class="body">
+                            <div class="flex flex-col gap-11">
+                                <div class="grow">
+                                    Set up your games your way. All of our games come fully customisable so that you can configure them exactly how you want them.
+                                </div>
+                                <div class="flex justify-center">
+                                    <button class="action-button">CONTACT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item" style="border-color: #852d27;">
+                        <div class="header" style="background-image: url('assets/images/contact/header02.png');border-color: #852d27;">
+                            <p>Operations</p>
+                            <img class="icon bottom-0 -right-[48px]" src="assets/images/contact/character02.png" alt="">
+                        </div>
+                        <div class="body">
+                            <div class="flex flex-col gap-11">
+                                <div class="grow">
+                                    Set up your games your way. All of our games come fully customisable so that you can configure them exactly how you want them.
+                                </div>
+                                <div class="flex justify-center">
+                                    <button class="action-button">CONTACT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item" style="border-color: #1b615d;">
+                        <div class="header" style="background-image: url('assets/images/contact/header03.png');border-color: #1b615d;">
+                            <p>Manager</p>
+                            <img class="icon -bottom-[83px] -right-[117px]" src="assets/images/contact/character03.png" alt="">
+                        </div>
+                        <div class="body">
+                            <div class="flex flex-col gap-11">
+                                <div class="grow">
+                                    Set up your games your way. All of our games come fully customisable so that you can configure them exactly how you want them.
+                                </div>
+                                <div class="flex justify-center">
+                                    <button class="action-button">CONTACT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <h1 class="text-3xl font-bold underline">
-            Hello world!
-        </h1>
 
+        <!-- Footer -->
+        <div class="flex flex-col items-center justify-center gap-5 py-20 mt-32 bg-black">
+            <img class="w-auto" src="assets/images/logo.png" alt="">
+            <div class="flex items-center justify-center gap-14">
+                <a href="#" class="duration-200 hover:scale-110">
+                    <img cl src="assets/images/icons/post_icon.png" alt="">
+                </a>
+                <a href="#" class="duration-200 hover:scale-110">
+                    <img cl src="assets/images/icons/send_icon.png" alt="">
+                </a>
+                <a href="#" class="duration-200 hover:scale-110">
+                    <img cl src="assets/images/icons/twitter_icon.png" alt="">
+                </a>
+                <a href="#" class="duration-200 hover:scale-110">
+                    <img cl src="assets/images/icons/discord_icon.png" alt="">
+                </a>
+            </div>
+            <p class="text-[#939393]">Chain rivals @ Gaming.js</p>
+        </div>
     </div>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 
 </html>

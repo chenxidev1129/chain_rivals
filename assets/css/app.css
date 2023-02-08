@@ -265,6 +265,7 @@ html {
 }
 
 .contact-item .body {
+    height: 100%;
     padding: 45px;
     color: white;
     font-size: 20px;

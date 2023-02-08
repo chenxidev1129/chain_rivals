@@ -8,11 +8,13 @@
     <title>Chain Rivals</title>
     <!-- JS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
     <!-- CSS -->
     <link href="assets/css/app.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-black">
     <div class="relative flex flex-col bg-scroll bg-top bg-no-repeat bg-cover"
         style="background-image: url(assets/images/background.jpg);">
         <!-- Header -->
@@ -28,17 +30,17 @@
                     <img class="w-auto" src="assets/images/logo.png" alt="">
                 </div>
                 <div class="header-menu grow">
-                    <a href="#start" class="header-menu-item actived">
+                    <a href="#start" class="header-menu-item active">
                         <p>START PLAYING</p>
                     </a>
                     <a href="#game" class="header-menu-item">
                         <p>GAMEPLAY</p>
                     </a>
-                    <a href="#token" class="header-menu-item">
-                        <p>TOKEN ALLOCATION</p>
-                    </a>
                     <a href="#map" class="header-menu-item">
                         <p>ROADMAP</p>
+                    </a>
+                    <a href="#token" class="header-menu-item">
+                        <p>TOKEN ALLOCATION</p>
                     </a>
                     <a href="#team" class="header-menu-item">
                         <p>TEAM</p>
@@ -83,7 +85,7 @@
         <!-- Body -->
         <div class="flex flex-col">
             <!-- Main Buttons -->
-            <div id="start" class="flex flex-col gap-5 h-[92vh] justify-center items-center">
+            <div id="start" class="page-section flex flex-col gap-5 h-[92vh] justify-center items-center">
                 <button class="main-button hover:scale-105">
                     <img src="assets/images/buttons/buy_button.png" alt="">
                     <img class="hover-image" src="assets/images/buttons/buy_button_hover.png" alt="">
@@ -94,7 +96,7 @@
                 </button>
             </div>
             <!-- Core Gameplay -->
-            <div id="game" class="flex flex-col gap-56 px-[12%]">
+            <div id="game" class="page-section flex flex-col gap-[100px] px-[12%] pt-[100px]">
                 <div class="flex justify-center">
                     <div class="sub-title-section">
                         <img src="assets/images/title_background.png" alt="">
@@ -136,7 +138,7 @@
                 </div>
             </div>
             <!-- Chain Rivals Road Map -->
-            <div id="map" class="flex flex-col gap-[100px] px-[12%] mt-[115px]">
+            <div id="map" class="page-section flex flex-col gap-[100px] px-[12%] pt-[100px]">
                 <div class="flex justify-center">
                     <div class="sub-title-section">
                         <img src="assets/images/title_background.png" alt="">
@@ -214,7 +216,7 @@
                 </div>
             </div>
             <!-- Tokenomics section -->
-            <div id="token" class="flex flex-col gap-[45px]">
+            <div id="token" class="page-section flex flex-col gap-[45px] pt-[100px]">
                 <div class="flex justify-center">
                     <div class="sub-title-section">
                         <img src="assets/images/title_background.png" alt="">
@@ -280,7 +282,7 @@
                 </div>
             </div>
             <!-- Team -->
-            <div id="team" class="flex flex-col">
+            <div id="team" class="flex flex-col page-section pt-[100px]">
                 <div class="flex justify-center">
                     <div class="sub-title-section">
                         <img src="assets/images/title_background.png" alt="">
@@ -343,7 +345,7 @@
         </div>
 
         <!-- Footer -->
-        <div class="flex flex-col items-center justify-center gap-5 py-20 mt-32 bg-black">
+        <div class="flex flex-col items-center justify-center gap-5 py-20 mt-32">
             <img class="w-auto" src="assets/images/logo.png" alt="">
             <div class="flex items-center justify-center gap-14">
                 <a href="#" class="duration-200 hover:scale-110">
@@ -362,8 +364,6 @@
             <p class="text-[#939393]">Chain rivals @ Gaming.js</p>
         </div>
     </div>
-
-    <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 
 </html>

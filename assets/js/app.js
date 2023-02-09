@@ -42,7 +42,7 @@ $(document).ready(function() {
         let calcAngleY = (y - halfHeight) / 30;
 
         // Set the items transform CSS property
-        item.style.transform = `rotateY(${calcAngleX}deg) rotateX(${calcAngleY}deg) scale(1.02)`;
+        item.style.transform = `rotateY(${calcAngleX}deg) rotateX(${calcAngleY}deg) scale(1)`;
         
         // And set its container's perspective.
         parent.style.perspective = `${halfWidth * 2}px`

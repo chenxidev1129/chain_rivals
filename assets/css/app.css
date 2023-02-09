@@ -121,6 +121,7 @@ html {
 .gameplay-items-panel {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-content: center;
     gap: 5%;
 }
 
@@ -141,7 +142,6 @@ html {
 }
 
 .gameplay-item:hover {
-    border-width: 3px;
     border-color: #83b8bb;
 }
 

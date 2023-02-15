@@ -6,6 +6,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 .header-menu {
     display: flex;
     flex-direction: row;
@@ -17,11 +22,7 @@ html {
     display: flex;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 40px;
-    padding-right: 40px;
     color: #ffffff;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
     align-items: center;
     cursor: pointer;
 }
@@ -40,6 +41,10 @@ html {
     border-color: #bf7bff;
 }
 
+.header-menu-item p {
+    text-align: center;
+}
+
 .left-popup-menu {
     display: flex;
     position: fixed;
@@ -47,6 +52,7 @@ html {
     flex-direction: row;
     top: 29%;
     gap: 15px;
+    z-index: 20;
 }
 
 .left-popup-menu-items-panel {
@@ -119,16 +125,13 @@ html {
 }
 
 .gameplay-items-panel {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     align-content: center;
-    gap: 5%;
 }
 
 .gameplay-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     padding: 20px;
     border-radius: 1rem;
@@ -170,16 +173,12 @@ html {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .option-title {
-    padding-top: 40px;
-    padding-bottom: 60px;
     color: #f0d498;
-    font-size: 31px;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -225,18 +224,6 @@ html {
     text-transform: uppercase;
 }
 
-.analysis-item .part .name {
-    font-size: 27px;
-    line-height: 27px;
-    font-weight: bold;
-}
-
-.analysis-item .part .value {
-    font-size: 23px;
-    line-height: 23px;
-    font-weight: 500;
-}
-
 .contact-item {
     display: flex;
     flex-direction: column;
@@ -253,10 +240,8 @@ html {
 
 .contact-item .header {
     position: relative;
-    padding: 45px;
     border-bottom: solid 2px;
     color: white;
-    font-size: 24px;
     background-size: cover;
 }
 
@@ -266,10 +251,7 @@ html {
 
 .contact-item .body {
     height: 100%;
-    padding: 45px;
     color: white;
-    font-size: 20px;
-    line-height: 25px;
     background-color: black;
 }
 

@@ -4,6 +4,8 @@ $(document).ready(function() {
     $(document).on("scroll", onScroll);
 
     function onScroll(event){
+        scrollFunction();
+
         var scrollPos = $(document).scrollTop();
         $('.header-menu-item').each(function () {
             var currLink = $(this);
@@ -18,6 +20,17 @@ $(document).ready(function() {
         });
 
         reveal();
+    }
+
+    // Get the button:
+    let scrollTopButton = document.getElementById("scrollTopBtn");
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopButton.style.display = "block";
+        } else {
+            scrollTopButton.style.display = "none";
+        }
     }
 
     // 3D Button Effect
@@ -95,4 +108,10 @@ $(document).ready(function() {
             }
         }
     }
-})
+});
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

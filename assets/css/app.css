@@ -11,6 +11,22 @@ body {
     width: 100%;
 }
 
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
 .header-menu {
     display: flex;
     flex-direction: row;

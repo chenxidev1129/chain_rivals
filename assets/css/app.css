@@ -91,7 +91,7 @@ body {
 .header-menu-item:hover {
     color: #bf7bff;
     border-radius: 9999px;
-    border-width: 1px;
+    /* border-width: 1px; */
     border-color: #bf7bff;
 }
 

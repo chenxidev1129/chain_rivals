@@ -11,6 +11,44 @@ body {
     width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+    .main-body {
+        background-image: url(../images/mobile_background.jpg);
+    }
+    .left-character {
+        position: absolute;
+        top: 85px;
+        left: -14%;
+        width: 100%;
+    }
+    
+    .right-character {
+        position: absolute;
+        top: 140px;
+        right: -40px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main-body {
+        background-image: url(../images/desktop_background.jpg);
+    }
+    .left-character {
+        position: absolute;
+        top: 96px;
+        left: 11%;
+        width: 45%;
+    }
+    
+    .right-character {
+        position: absolute;
+        top: 175px;
+        right: 0px;
+        width: 45%;
+    }
+}
+
 #scrollTopBtn {
     display: none;
     position: fixed;
@@ -104,20 +142,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.left-character {
-    position: absolute;
-    top: 0px;
-    left: 11%;
-    width: 45%;
-}
-
-.right-character {
-    position: absolute;
-    top: 175px;
-    right: 0px;
-    width: 45%;
 }
 
 .main-button {

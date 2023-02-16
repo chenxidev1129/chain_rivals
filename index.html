@@ -18,20 +18,19 @@
 </head>
 
 <body x-data="{ open_mobile_menu: false }" class="relative bg-black">
-    <div class="relative flex flex-col bg-scroll bg-top bg-no-repeat bg-cover"
-        style="background-image: url(assets/images/background.jpg);">
+    <div class="relative flex flex-col bg-scroll bg-top bg-no-repeat bg-cover main-body">
         <!-- Header -->
         <div class="fixed top-0 left-0 z-10 flex flex-col w-full md:absolute">
             <!-- Mobile Header -->
             <div class="flex md:hidden flex-row gap-4 w-full h-[60px] bg-black justify-center items-center relative">
-                <a href="#start" class="w-[120px] h-[60px] flex md:hidden justify-center items-center flex-none">
+                <a href="#start" class="w-[100px] flex md:hidden justify-center items-center flex-none">
                     <img class="w-auto" src="assets/images/logo.png" alt="">
                 </a>
                 <div class="absolute top-[15px] right-[15px] cursor-pointer" x-on:click="open_mobile_menu = true">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
-                            d="M3.75 22.5V20H26.25V22.5H3.75ZM3.75 16.25V13.75H26.25V16.25H3.75ZM3.75 10V7.5H26.25V10H3.75Z"
-                            fill="white" />
+                            d="M23.75 21.25H6.25C4.87125 21.25 3.75 22.3712 3.75 23.75C3.75 25.1288 4.87125 26.25 6.25 26.25H23.75C25.1288 26.25 26.25 25.1288 26.25 23.75C26.25 22.3712 25.1288 21.25 23.75 21.25ZM23.75 12.5H6.25C4.87125 12.5 3.75 13.6212 3.75 15C3.75 16.3788 4.87125 17.5 6.25 17.5H23.75C25.1288 17.5 26.25 16.3788 26.25 15C26.25 13.6212 25.1288 12.5 23.75 12.5ZM23.75 3.75H6.25C4.87125 3.75 3.75 4.87125 3.75 6.25C3.75 7.62875 4.87125 8.75 6.25 8.75H23.75C25.1288 8.75 26.25 7.62875 26.25 6.25C26.25 4.87125 25.1288 3.75 23.75 3.75Z"
+                            fill="#A6A6A6" />
                     </svg>
                 </div>
             </div>
@@ -90,11 +89,11 @@
         <!-- Characters -->
         <div class="relative">
             <!-- Left -->
-            <div class="left-character top-[200px] left-[2%] md:top-24 md:left-[11%] lg:top-0">
+            <div class="left-character lg:top-0">
                 <img src="assets/images/left_character.png" alt="">
             </div>
             <!-- Right -->
-            <div class="right-character top-[215px] md:top-[175px]">
+            <div class="right-character">
                 <img src="assets/images/right_character.png" alt="">
             </div>
         </div>
@@ -103,11 +102,11 @@
         <div class="flex flex-col">
             <!-- Main Buttons -->
             <div id="start" class="page-section flex flex-col gap-5 h-[80vh] xl:h-[92vh] justify-center items-center">
-                <button class="main-button hover:scale-105 w-[180px] lg:w-[200px] xl:w-[247px]">
+                <button class="main-button hover:scale-105 w-[190px] lg:w-[200px] xl:w-[247px]">
                     <img src="assets/images/buttons/buy_button.png" alt="">
                     <img class="hover-image" src="assets/images/buttons/buy_button_hover.png" alt="">
                 </button>
-                <button class="main-button hover:scale-105 w-[180px] lg:w-[200px] xl:w-[247px]">
+                <button class="main-button hover:scale-105 w-[190px] lg:w-[200px] xl:w-[247px]">
                     <img src="assets/images/buttons/join_button.png" alt="">
                     <img class="hover-image" src="assets/images/buttons/join_button_hover.png" alt="">
                 </button>
@@ -157,7 +156,7 @@
             </div>
             <!-- Chain Rivals Road Map -->
             <div id="map"
-                class="page-section flex flex-col gap-[50px] md:gap-[100px] px-[2%] lg:px-[8%] xl:px-[12%] pt-[20px] xl:pt-[100px]">
+                class="page-section flex flex-col gap-[50px] md:gap-[100px] px-[4%] lg:px-[8%] xl:px-[12%] pt-[20px] xl:pt-[100px]">
                 <div class="flex justify-center">
                     <div class="sub-title-section">
                         <img class="w-[300px] md:w-[457px]" src="assets/images/title_background.png" alt="">
@@ -436,28 +435,36 @@
         </div>
     </div>
     <!-- Mobile Menu -->
-    <div x-show="open_mobile_menu" class="fixed top-0 left-0 z-20 flex flex-col w-full h-full gap-5 p-5 bg-black bg-opacity-90" style="display: none;">
+    <div x-show="open_mobile_menu"
+        class="fixed top-0 left-0 z-20 flex flex-col w-full h-full gap-5 p-5 bg-black bg-opacity-90"
+        style="display: none;">
         <div class="flex justify-end text-white">
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" x-on:click="open_mobile_menu = false">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
+                x-on:click="open_mobile_menu = false">
                 <path
                     d="M8 23.75L6.25 22L13.25 15L6.25 8L8 6.25L15 13.25L22 6.25L23.75 8L16.75 15L23.75 22L22 23.75L15 16.75L8 23.75Z"
                     fill="white" />
             </svg>
         </div>
         <div class="flex flex-col w-full gap-3 text-white">
-            <a href="#start" class="header-menu-item px-[20px] lg:px-[30px] xl:px-[40px] active" x-on:click="open_mobile_menu = false">
+            <a href="#start" class="header-menu-item px-[20px] lg:px-[30px] xl:px-[40px] active"
+                x-on:click="open_mobile_menu = false">
                 <p>START PLAYING</p>
             </a>
-            <a href="#game" class="header-menu-item px-[20px] lg:px-[30px] xl:px-[40px]" x-on:click="open_mobile_menu = false">
+            <a href="#game" class="header-menu-item px-[20px] lg:px-[30px] xl:px-[40px]"
+                x-on:click="open_mobile_menu = false">
                 <p>GAMEPLAY</p>
             </a>
-            <a href="#map" class="header-menu-item px-[20px] lg:px-[30px] xl:px-[40px]" x-on:click="open_mobile_menu = false">
+            <a href="#map" class="header-menu-item px-[20px] lg:px-[30px] xl:px-[40px]"
+                x-on:click="open_mobile_menu = false">
                 <p>ROADMAP</p>
             </a>
-            <a href="#token" class="header-menu-item px-[20px] lg:px-[30px] xl:px-[40px]" x-on:click="open_mobile_menu = false">
+            <a href="#token" class="header-menu-item px-[20px] lg:px-[30px] xl:px-[40px]"
+                x-on:click="open_mobile_menu = false">
                 <p>TOKEN ALLOCATION</p>
             </a>
-            <a href="#team" class="header-menu-item px-[20px] lg:px-[30px] xl:px-[40px]" x-on:click="open_mobile_menu = false">
+            <a href="#team" class="header-menu-item px-[20px] lg:px-[30px] xl:px-[40px]"
+                x-on:click="open_mobile_menu = false">
                 <p>TEAM</p>
             </a>
         </div>
